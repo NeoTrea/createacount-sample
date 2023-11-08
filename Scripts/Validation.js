@@ -40,7 +40,7 @@ function validateForm(){
         changeInputFieldColour(check_lastname, false);
         changeInputFieldColour(check_confirmPassword, false);
         changeInputFieldColour(check_email, false);
-        location.replace("http://neotrea.site/Home")
+        location.replace("www.neotrea.site/Home")
     }
 }
 
