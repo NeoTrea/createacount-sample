@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark-lol">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">Tech Today</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span id = "BurgerLogo" class="toggler-icon top-bar"></span>
+                <span id = "BurgerLogo" class="toggler-icon middle-bar"></span>
+                <span id = "BurgerLogo" class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs me-auto mb-2 mb-lg-0 bg-dark-lol" id="navbarToggleExternalContent" data-bs-theme="dark">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Article.html">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 75px;">
+        <form name="validate" action="#" onsubmit="validateForm(); return false" method="=POST">
+            <div class="row">
+                <h2>Sign Up To Newsletter</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" name="emailSet" id="floatingInput" placeholder="email">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate">
+                            I'd like to Receive Special Offers from Tech Today
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="dropdown">
+                        <button id="FDrop" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a id="all" name="filter" class="dropdown-item">All</a></li>
+                            <li><a id="TechHardware" name="filter" class="dropdown-item">Tech Hardware</a></li>
+                            <li><a id="TechSoftware" name="filter" class="dropdown-item">Tech Software</a></li>
+                            <li><a id="web" name="filter" class="dropdown-item">Web</a></li>
+                            <li><a id="Company" name="filter" class="dropdown-item">Company Updates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="LeftSet">
+                        <input class="btn btn-secondary" type="submit" value="Create Account">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="Scripts/Validation.js"></script>
+    <script src="Scripts/filter.js"></script>
+</body>
+
+</html>
