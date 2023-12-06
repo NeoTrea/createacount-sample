@@ -2,11 +2,19 @@
     width: 50%;
 }
 
-.CardButton {
+.CardButton{
     padding: 5px;
     background-color: black;
-    width: 100%;
     color: aliceblue;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+.CardButton:hover{
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: aliceblue;
+    transition: all 1s ease-in-out;
+    transform: scale(50%);
 }
 
 .row {
@@ -22,7 +30,13 @@ p, h1, h2, h3, h4, h5, h6, .card-title{
 }
 body{
     background-color: #0E1111;
+    margin-bottom: 0px;
 }
+
+html{
+    margin-bottom: 0px;
+}
+
 .bg-dark-lol, .--bs-nav-tabs-link-active-bg{
     background-color: #0e135e;
 }
@@ -42,7 +56,17 @@ body{
     padding: 10px;
     color: white;
     background-color: black;
+    transition: all 0.25s ease-out;
     font-size: 22px;
+    border: none;
+}
+.ReadMoreL:hover{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    transition: all 0.25s ease-in-out;
+    font-size: 26px;
     border: none;
 }
 .ReadMoreM{
@@ -50,7 +74,17 @@ body{
     padding: 5px;
     color: white;
     background-color: black;
+    transition: all 0.25s ease-out;
     font-size: 17px;
+    border: none;
+}
+.ReadMoreM:hover{
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    transition: all 0.25s ease-out;
+    font-size: 22px;
     border: none;
 }
 .ReadMoreS{
@@ -58,6 +92,17 @@ body{
     padding: 3px;
     color: white;
     background-color: black;
+    transition: all 0.25s ease-out;
+    font-size: 15px;
+    border: none;
+}
+.ReadMoreS:hover{
+    width: 100%;
+    padding: 3px;
+    color: white;
+    background-color: black;
+    transition: all 0.25s ease-out;
+    font-size: 17px;
     border: none;
 }
 h3{
@@ -74,8 +119,8 @@ h3{
 }
 label, label::after{
     color: white;
-    --bs-body-bg: #171b1b;
-    --bs-body-color: white;
+    --bs-body-bg: #171b1b00;
+    --bs-active-color: white;
     
 }
 .form-control{
@@ -107,4 +152,43 @@ h4{
     font-weight: bold;
     text-align: center;
     font-size: 30px;
+}
+.FooterHeader{
+    font-weight: bold;
+}
+.FooterLink{
+    color: white;
+    text-decoration: none;
+    width: 50%;
+    text-align: center;
+}
+.FooterImg{
+    width: 30px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.FooterInfo{
+    text-align: center;
+}
+.FooterDesign{
+    width: 100%;
+    background-color: #171b1b;
+    margin-top: 15%;
+}
+.LogoNav{
+    width: 40px;
+}
+.FooterDesignDark{
+    padding: 5px;
+    background-color: black;
+}
+.PFLink{
+    color: white;
+    text-decoration: none;
+}
+.MainFooterG{
+    margin-top: 30%;
+}
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    color: white;
 }

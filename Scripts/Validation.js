@@ -6,21 +6,24 @@ function validateForm() {
     var all = document.getElementById("all");
     var check_email = document.forms["validate"]["emailSet"];
     var dropdownSet = document.getElementById("FDrop");
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+.[?:\.[a-zA-Z0-9-]+]*$/;
     var validNames = /^[A-Z]+[a-z]+$/;
     if (!check_email.value.match(validRegex) || dropdownSet.innerHTML == "Filter" || dropdownSet.innerHTML == "Filter ") {
         if (!check_email.value.match(validRegex)) {
             changeInputFieldColour(check_email, true);
+            alert("Error please Fill Email Box with Valid Email")
         } else {
             changeInputFieldColour(check_email, false);
         }
         if (dropdownSet.innerHTML == "Filter" || dropdownSet.innerHTML == "Filter ") {
+            alert("Error please Select Filter")
             dropdownSet.style.color = "red";
         } else {
             dropdownSet.style.color = "green";
         }
     } else {
         changeInputFieldColour(check_email, false);
+        alert("You have successfully signed up")
         if((Company.classList == "dropdown-item active") && (web.classList == "dropdown-item active") && (TechHardware.classList == "dropdown-item active") && (TechSoftware.classList == "dropdown-item active")){
             location.replace("./1AllFilter.html")
         }
